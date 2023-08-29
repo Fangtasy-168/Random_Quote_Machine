@@ -1,0 +1,98 @@
+
+html{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    
+    
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    //border: solid black;
+}
+
+body{
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(45deg, rgba(166,161,238,1),
+                                       rgba(161,138,183,1), 
+                                       rgba(159,125,157,1),
+                                       rgba(236,152,182,1),
+                                       rgba(247,192,211,1));
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+    font-size: 100%;
+    font-family: "Raleway", sans-serif;
+                    
+}
+#quoteBox{
+    position: relative;
+    padding: 1em 1em .5em 1em;
+    border: white solid .3em;
+    max-width: 65vw;
+}
+
+
+#text{
+    display: flex;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.75em; 
+    
+  }
+
+
+#author{
+    text-align: right;
+    font-size: 1.50em;
+    padding-top: 1em;
+    p::before{
+        content:"-"
+    }
+  }
+
+#buttons{
+    display:block;
+    padding-top: 20px;
+}
+
+.socialAction{
+    display:flex;
+    justify-content: center;
+    padding: 1vw 1vh;
+    float: left; 
+    width: 5vh;   
+    font-size: 1.65em;
+    color: white;
+    background-color: transparent;    
+    text-decoration: none;
+}
+
+button{
+    float: right;
+    font-size: 1.65em;
+    padding: .5em;
+    background-color: transparent;
+    border: rgba(255, 255, 255, 0.473) solid;
+}
+
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
