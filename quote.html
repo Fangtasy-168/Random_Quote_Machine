@@ -9,19 +9,23 @@
     <link rel = stylesheet href ="app\scss\styles.css"/>
 </head>
 <body>
-    <div id = "quoteBox">
-        <div id = "text">
-            <p><i class="fa fa-quote-left"></i> Everything you&apos;ve ever wanted is on the other side of fear. <i class="fa fa-quote-right"></i></p>
-        </div>
-        <div id = "author">
-            <p>author goes here</p>
-        </div>
-        <div id = "buttons">
-            <a id ="tweet-quote" title="Tweet this Quote" class="socialAction" href ="https://twitter.com/intent/tweet" target = "_blank"><i class ="fa fa-twitter"></i></a>
-            <a id= "tumblr-post" class="socialAction"><i class ="fa fa-tumblr"></i></a>
-            <button id="new-quote" title ="New Quote">New Quote</button>
-        </div>
-    </div>    
+    <div>
+        <div id = "quote-box">
+            <div id = "quoteSpot">
+                <p><i class="fa fa-quote-left"></i> <span id = "text"></span> <i class="fa fa-quote-right"></i></p>
+            </div>
+            <div id = "author">
+                <p></p>
+            </div>
+            <div id = "buttons">
+                <a id ="tweet-quote" title="Tweet this Quote" class="socialAction" href ="https://twitter.com/intent/tweet?text=" target = "_blank"><i class ="fa fa-twitter"></i></a>
+                <a id= "tumblr-post" class="socialAction" href ="https://www.tumblr.com/widgets/share/tool?data-posttype=quote&tags=quote,StevenUniverse&data-content=hello&canonicalUrl=https://random-quote-machine.freecodecamp.rocks/" target ="_blank"><i class ="fa fa-tumblr"></i></a>
+                <button id="new-quote" title ="New Quote">New Quote</button>
+            </div>
+        </div> 
+        <footer>By Tony Fang</footer> 
+    </div>
 </body>
 <script type = "text/javascript" src="App\Js\RquoteMachine.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

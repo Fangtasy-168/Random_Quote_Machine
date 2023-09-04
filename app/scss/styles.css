@@ -26,24 +26,32 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-#quoteBox {
-  position: relative;
-  padding: 1em 1em 0.5em 1em;
+div {
+  display: block;
+}
+
+#quote-box {
+  display: grid;
+  padding: 1em;
   border: white solid 0.3em;
+  border-radius: 2%;
   max-width: 65vw;
 }
 
-#text {
+#quoteSpot {
   display: flex;
   font-weight: 800;
   font-style: italic;
   font-size: 1.75em;
+  color: rgba(255, 255, 255, 0.861);
 }
 
 #author {
   text-align: right;
   font-size: 1.5em;
+  font-weight: 500;
   padding-top: 1em;
+  color: rgba(255, 255, 255, 0.837);
 }
 #author p::before {
   content: "-";
@@ -70,8 +78,25 @@ button {
   float: right;
   font-size: 1.65em;
   padding: 0.5em;
+  border-radius: 8%;
+  color: white;
   background-color: transparent;
   border: rgba(255, 255, 255, 0.473) solid;
+}
+
+footer {
+  text-align: center;
+  color: aliceblue;
+  font-size: x-large;
+  padding-top: 1%;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socialAction:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @keyframes gradient {
