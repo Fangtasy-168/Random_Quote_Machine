@@ -50,5 +50,4 @@ $(document).ready(() => {
     })
 
     $("#new-quote").click(RndQ)
-
 })
