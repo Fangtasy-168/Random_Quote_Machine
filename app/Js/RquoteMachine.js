@@ -1,17 +1,5 @@
 const file = "app/Js/quotes.json"
 
-// async function getQuotes() {
-//     try {
-//         const response = await fetch(file);
-//         const data = await response.json();
-//         quotesArray = data.quotes;
-//         console.log(data);
-//         console.log(quotesArray);
-//     } catch (error) {
-//         console.error("Error fetching JSON:", error);
-//     }
-// }
-
 async function getQuotes() {
     try {
         response = await fetch(file)
