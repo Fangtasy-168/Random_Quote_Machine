@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useContext } from "react"
 
-export default function App() {
+export default function QuoteMachine() {
     let greeting = 'hello'
     return (
         <div>
