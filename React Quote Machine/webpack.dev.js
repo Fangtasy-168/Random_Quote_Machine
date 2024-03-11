@@ -12,7 +12,7 @@ module.exports = merge(common, {
     },
     target: 'web',
     devServer: {
-        port: '5000',
+        port: 5000,
         static: {
             directory: path.join(__dirname, 'public')
         },
@@ -25,7 +25,7 @@ module.exports = merge(common, {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'public', 'index.html')
+            template: path.resolve(__dirname, 'public', 'index.html')
         })
     ],
 })
