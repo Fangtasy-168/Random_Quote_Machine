@@ -1,7 +1,7 @@
 // jquery version javascript of the quote machine
 
 const file = "app/Js/quotes.json"
-const link = "https://gist.githubusercontent.com/dragonofnyc0218/367842b9afc9ac978e06a79fa863ef61/raw/01ffaf13593987b8d04ce6f2069e224d8e5b2c18/gistfile1.json"
+const link = "https://gist.githubusercontent.com/Fangtasy-168/367842b9afc9ac978e06a79fa863ef61/raw/01ffaf13593987b8d04ce6f2069e224d8e5b2c18/gistfile1.json"
 
 function getQ() {
     return $.ajax({
